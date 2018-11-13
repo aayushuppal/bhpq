@@ -27,7 +27,7 @@ setup(
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
     ],
-    packages=["reader"],
+    packages=["bhpq"],
     include_package_data=True,
     install_requires=[
     ],
