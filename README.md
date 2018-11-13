@@ -4,7 +4,7 @@ A binary heap priority queue implementation
 
 ## Installation
 
-You can install the `bhpq` from [PyPI](https://pypi.org/project/bhpq):
+You can install bhpq from [PyPI](https://pypi.org/project/bhpq):
 
     pip install bhpq
 
