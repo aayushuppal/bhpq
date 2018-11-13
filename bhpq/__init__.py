@@ -2,7 +2,7 @@
 
     >>> from bhpq import BinaryHeapPriorityQueue
 
-See https://github.com for more information
+See https://github.com/aayushuppal/bhpq for more information
 """
 
 # Version of bhrq package

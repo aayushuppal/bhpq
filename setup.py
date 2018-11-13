@@ -17,7 +17,7 @@ setup(
     description="Binary Heap Priority Queue",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com",
+    url="https://github.com/aayushuppal/bhpq",
     author="Aayush Uppal",
     author_email="aayuppal@gmail.com",
     license="MIT",

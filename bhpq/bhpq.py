@@ -13,7 +13,7 @@ Contact:
 More information is available at:
 
 - https://pypi.org
-- https://github.com
+- https://github.com/aayushuppal/bhpq
 
 
 Version:
