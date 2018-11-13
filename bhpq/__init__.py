@@ -6,6 +6,6 @@ See https://github.com/aayushuppal/bhpq for more information
 """
 
 # Version of bhrq package
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 
 from .bhpq import BinaryHeapPriorityQueue
