@@ -67,4 +67,4 @@ adds an element to the priority queue
 
 ## Maintainer
 
-http://aayushuppal.github.io
+https://aayushuppal.github.io
