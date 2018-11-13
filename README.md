@@ -64,3 +64,7 @@ removes and returns the object at the top of the priority queue if it exists els
 - `add(val)`
 
 adds an element to the priority queue
+
+## Maintainer
+
+http://aayushuppal.github.io
