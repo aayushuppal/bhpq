@@ -1,8 +1,8 @@
 # BHPQ - Binary Heap Priority Queue
 
+A binary heap priority queue implementation
 
-## Test
+## Usage
 
-```
-make test
-```
+    from bhpq import BinaryHeapPriorityQueue
+
