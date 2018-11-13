@@ -1,4 +1,4 @@
-"""Setup script for realpython-reader"""
+"""Setup script for bhpq"""
 
 import os.path
 from setuptools import setup
