@@ -13,3 +13,32 @@ bhpq is supported on Python 2.7, as well as Python 3.4 and above.
 ## Usage
 
     from bhpq import BinaryHeapPriorityQueue
+    
+    # The BinaryHeapPriorityQueue constructor takes two input params:
+    
+    # - prefer
+    #    the preferred object is pushed to the top of the queue
+    # the prefer input is a lambda function eg:
+    # prefer=(lambda lhs, rhs: lhs if lhs.val >= rhs.val else rhs)
+        
+    # - size
+    #    The size of the queue, default value is 10
+
+## Example
+
+    A = BinaryHeapPriorityQueue(
+            prefer=(lambda lhs, rhs: lhs if lhs.val >= rhs.val else rhs), size=5
+        )
+    A.add(Node(1))
+    A.add(Node(4))
+    A.add(Node(3))
+    A.add(Node(5))
+    A.add(Node(2))
+
+    assert 5 == A.pop().val
+    assert 4 == A.pop().val
+    assert 3 == A.pop().val
+    assert 2 == A.pop().val
+    assert 1 == A.pop().val
+    assert None == A.pop()
+
