@@ -12,14 +12,9 @@ Contact:
 
 More information is available at:
 
-- https://pypi.org
+- https://pypi.org/project/bhpq
 - https://github.com/aayushuppal/bhpq
 
-
-Version:
---------
-
-- bhpq v1.0.0
 """
 
 
