@@ -1,4 +1,5 @@
 """Tests for the bhpq.bhpq module"""
+from __future__ import absolute_import
 
 import pytest
 from bhpq import BinaryHeapPriorityQueue
