@@ -1,3 +1,10 @@
+[![HitCount](http://hits.dwyl.io/aayushuppal/bhpq.svg)](http://hits.dwyl.io/aayushuppal/bhpq)
+[![GitHub contributors](https://img.shields.io/github/contributors/aayushuppal/bhpq.svg)](https://github.com/aayushuppal/bhpq/graphs/contributors)
+[![version](https://img.shields.io/pypi/v/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
+[![license](https://img.shields.io/pypi/l/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
+[![Build Status](https://travis-ci.org/aayushuppal/bhpq.svg?branch=master)](https://travis-ci.org/aayushuppal/bhpq)
+[![Coverage Status](https://coveralls.io/repos/github/aayushuppal/bhpq/badge.svg?branch=master)](https://coveralls.io/github/aayushuppal/bhpq?branch=master)
+
 # BHPQ - Binary Heap Priority Queue
 
 A binary heap priority queue implementation
