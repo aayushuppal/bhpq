@@ -1,4 +1,4 @@
-[![HitCount](http://hits.dwyl.io/aayushuppal/bhpq.svg)](http://hits.dwyl.io/aayushuppal/bhpq)
+[![HitCount](http://hits.dwyl.io/aayushuppal/bhpq.svg)](https://github.com/aayushuppal/bhpq)
 [![GitHub contributors](https://img.shields.io/github/contributors/aayushuppal/bhpq.svg)](https://github.com/aayushuppal/bhpq/graphs/contributors)
 [![version](https://img.shields.io/pypi/v/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
 [![license](https://img.shields.io/pypi/l/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
