@@ -1,8 +1,10 @@
 [![HitCount](http://hits.dwyl.io/aayushuppal/bhpq.svg)](https://github.com/aayushuppal/bhpq)
 [![GitHub contributors](https://img.shields.io/github/contributors/aayushuppal/bhpq.svg)](https://github.com/aayushuppal/bhpq/graphs/contributors)
-[![version](https://img.shields.io/pypi/v/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
-[![license](https://img.shields.io/pypi/l/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
+[![Version](https://img.shields.io/pypi/v/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
+[![License](https://img.shields.io/pypi/l/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
 [![Build Status](https://travis-ci.org/aayushuppal/bhpq.svg?branch=master)](https://travis-ci.org/aayushuppal/bhpq)
+[![Downloads](https://img.shields.io/pypi/dm/bhpq.svg)](https://pypi.python.org/pypi/bhpq)
+
 
 # BHPQ - Binary Heap Priority Queue
 
