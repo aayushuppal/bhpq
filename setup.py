@@ -15,7 +15,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 # This call to setup() does all the work
 setup(
     name="bhpq",
-    version="1.0.6",
+    version="2.0.0",
     description="Binary Heap Priority Queue",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -26,7 +26,6 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
     ],
     packages=["bhpq"],

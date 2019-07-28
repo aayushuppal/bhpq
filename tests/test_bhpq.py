@@ -2,7 +2,6 @@
 from __future__ import absolute_import
 
 import pytest
-
 from bhpq import BinaryHeapPriorityQueue
 
 
@@ -52,6 +51,8 @@ def test_val1():
     A.add(1)
     A.add(3)
     A.add(2)
+
+    print(A)
 
     assert 3 == A.pop()
     assert 2 == A.pop()

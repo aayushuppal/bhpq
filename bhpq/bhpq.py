@@ -17,22 +17,23 @@ More information is available at:
 
 """
 
+from typing import Any, Callable, List
 
-class BinaryHeapPriorityQueue(object):
-    def __init__(self, prefer, size=10):
-        self._heapList = [None for i in range(0, size + 1)]
-        self._currentSize = 0
-        self._prefer = prefer
-        return
 
-    def size(self):
+class BinaryHeapPriorityQueue:
+    def __init__(self, prefer: Callable, size: int = 10):
+        self._heapList: List[Any] = [None for i in range(0, size + 1)]
+        self._currentSize: int = 0
+        self._prefer: Callable = prefer
+
+    def size(self) -> int:
         return self._currentSize
 
-    def peek(self):
+    def peek(self) -> Any:
         result = self._heapList[1] if self._currentSize >= 1 else None
         return result
 
-    def pop(self):
+    def pop(self) -> Any:
         if self._currentSize < 1:
             return None
         result = self._heapList[1]
@@ -42,7 +43,7 @@ class BinaryHeapPriorityQueue(object):
         self.__sink(1)
         return result
 
-    def add(self, val):
+    def add(self, val: Any):
         MAX_HEAPLIST_INDEX = len(self._heapList) - 1
         VAL_INDEX = self._currentSize + 1
 
@@ -55,7 +56,7 @@ class BinaryHeapPriorityQueue(object):
         self.__swim(self._currentSize)
         return
 
-    def __sink(self, n):
+    def __sink(self, n: int):
         k = n
         while 2 * k <= self._currentSize:
             j = 2 * k
@@ -69,7 +70,7 @@ class BinaryHeapPriorityQueue(object):
             k = j
         return
 
-    def __swim(self, n):
+    def __swim(self, n: int):
         k = n
         while (k > 1) and self._heapList[k] == self._prefer(
             self._heapList[k], self._heapList[int(k / 2)]
@@ -78,8 +79,11 @@ class BinaryHeapPriorityQueue(object):
             k = int(k / 2)
         return
 
-    def __exch(self, i, j):
+    def __exch(self, i: int, j: int):
         temp = self._heapList[i]
         self._heapList[i] = self._heapList[j]
         self._heapList[j] = temp
         return
+
+    def __repr__(self) -> str:
+        return str(self._heapList)

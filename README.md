@@ -16,21 +16,21 @@ You can install bhpq from [PyPI](https://pypi.org/project/bhpq):
 
     pip install bhpq
 
-bhpq is supported on Python 2.7, as well as Python 3.4 and above.
+bhpq is supported on Python 3.7
 
 ## Usage
 
     from bhpq import BinaryHeapPriorityQueue
-    
+
     # The BinaryHeapPriorityQueue constructor takes two input params:
-    
+
     # - prefer (required param)
     #    the preferred object is pushed to the top of the queue
     # the prefer input is a lambda function eg:
     # prefer=(lambda lhs, rhs: lhs if lhs.val >= rhs.val else rhs)
-        
+
     # - size
-    #    The size of the queue, default value is 10
+    #    The initial size allocation of the queue, default value is 10
 
 ## Example
 
