@@ -14,3 +14,6 @@ clean:
 			.cache \
 			bhpq.egg-info \
 			.pytest_cache
+
+pc:
+	pre-commit run --all-files

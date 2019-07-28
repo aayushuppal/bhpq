@@ -2,6 +2,7 @@
 from __future__ import absolute_import
 
 import pytest
+
 from bhpq import BinaryHeapPriorityQueue
 
 
@@ -10,9 +11,9 @@ class Node(object):
         self.val = val
 
 
-#
 # Tests
-#
+
+
 def test_node1():
 
     A = BinaryHeapPriorityQueue(
@@ -47,9 +48,7 @@ def test_node2():
 
 def test_val1():
 
-    A = BinaryHeapPriorityQueue(
-        prefer=(lambda lhs, rhs: lhs if lhs >= rhs else rhs), size=3
-    )
+    A = BinaryHeapPriorityQueue(prefer=(lambda lhs, rhs: lhs if lhs >= rhs else rhs), size=3)
     A.add(1)
     A.add(3)
     A.add(2)

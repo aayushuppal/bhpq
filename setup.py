@@ -1,6 +1,8 @@
 """Setup script for bhpq"""
 
+
 import os.path
+
 from setuptools import setup
 
 # The directory containing this file
@@ -13,7 +15,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 # This call to setup() does all the work
 setup(
     name="bhpq",
-    version="1.0.5",
+    version="1.0.6",
     description="Binary Heap Priority Queue",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -29,7 +31,6 @@ setup(
     ],
     packages=["bhpq"],
     include_package_data=True,
-    install_requires=[
-    ],
+    install_requires=[],
     entry_points={},
 )
