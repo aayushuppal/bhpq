@@ -8,7 +8,7 @@
 
 # BHPQ - Binary Heap Priority Queue
 
-A binary heap priority queue implementation
+A binary heap priority queue implementation, thread safe
 
 ## Installation
 
