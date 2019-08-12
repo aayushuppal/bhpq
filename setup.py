@@ -2,6 +2,7 @@
 
 
 import os.path
+from typing import Dict
 
 from setuptools import setup
 
@@ -12,10 +13,16 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(HERE, "README.md")) as fid:
     README = fid.read()
 
+# read version
+_version_info: Dict[str, str] = {}
+with open(os.path.join(HERE, "bhpq/_version.py")) as fid:
+    exec(fid.read(), _version_info)
+
+
 # This call to setup() does all the work
 setup(
     name="bhpq",
-    version="2.0.0",
+    version=_version_info["__version__"],
     description="Binary Heap Priority Queue",
     long_description=README,
     long_description_content_type="text/markdown",

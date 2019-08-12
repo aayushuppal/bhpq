@@ -17,6 +17,7 @@ More information is available at:
 
 """
 
+from threading import RLock
 from typing import Any, Callable, List
 
 
@@ -25,6 +26,7 @@ class BinaryHeapPriorityQueue:
         self._heapList: List[Any] = [None for i in range(0, size + 1)]
         self._currentSize: int = 0
         self._prefer: Callable = prefer
+        self.lock = RLock()
 
     def size(self) -> int:
         return self._currentSize
@@ -34,6 +36,8 @@ class BinaryHeapPriorityQueue:
         return result
 
     def pop(self) -> Any:
+        self.lock.acquire()
+
         if self._currentSize < 1:
             return None
         result = self._heapList[1]
@@ -41,9 +45,13 @@ class BinaryHeapPriorityQueue:
         self._heapList[self._currentSize] = None
         self._currentSize -= 1
         self.__sink(1)
+
+        self.lock.release()
         return result
 
     def add(self, val: Any):
+        self.lock.acquire()
+
         MAX_HEAPLIST_INDEX = len(self._heapList) - 1
         VAL_INDEX = self._currentSize + 1
 
@@ -54,6 +62,8 @@ class BinaryHeapPriorityQueue:
 
         self._currentSize += 1
         self.__swim(self._currentSize)
+
+        self.lock.release()
         return
 
     def __sink(self, n: int):
